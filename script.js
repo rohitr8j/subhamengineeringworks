@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.15 // Trigger when 15% of section is visible
+        threshold: 0.02 // Trigger when 2% of the section is visible (safe for tall sections on mobile)
     });
     
     revealSections.forEach(section => {

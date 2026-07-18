@@ -62,7 +62,7 @@ button, input, select, textarea {
 .section-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 100px 24px;
+    padding: 60px 24px; /* Tighter padding for mobile screens */
 }
 
 .section-header {
@@ -921,6 +921,10 @@ button, input, select, textarea {
 
 /* Tablets & Small Desktops (768px and up) */
 @media (min-width: 768px) {
+    .section-container {
+        padding: 100px 24px; /* Standard spacious padding for larger screens */
+    }
+    
     .section-title {
         font-size: 3rem;
     }
